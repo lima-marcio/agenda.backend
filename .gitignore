@@ -1,0 +1,5 @@
+back-end/bin/
+**/temp/
+back-end/obj/
+.vscode/
+*.log

@@ -1,0 +1,11 @@
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\bin\Debug\net9.0\Agenda.Infrastructure.deps.json
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\bin\Debug\net9.0\Agenda.Infrastructure.dll
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\bin\Debug\net9.0\Agenda.Infrastructure.pdb
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.AssemblyInfoInputs.cache
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.AssemblyInfo.cs
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.dll
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\refint\Agenda.Infrastructure.dll
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\Agenda.Infrastructure.pdb
+C:\Projetos\agenda\back-end\Agenda.Infrastructure\obj\Debug\net9.0\ref\Agenda.Infrastructure.dll

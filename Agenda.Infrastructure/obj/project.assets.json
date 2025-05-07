@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Agenda.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Agenda.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Agenda.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Agenda.Application.dll": {}
+        }
+      },
+      "Agenda.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Agenda.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Agenda.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Agenda.Application/1.0.0": {
+      "type": "project",
+      "path": "../Agenda.Application/Agenda.Application.csproj",
+      "msbuildProject": "../Agenda.Application/Agenda.Application.csproj"
+    },
+    "Agenda.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Agenda.Domain/Agenda.Domain.csproj",
+      "msbuildProject": "../Agenda.Domain/Agenda.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Agenda.Application >= 1.0.0",
+      "Agenda.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\marci\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projetos\\agenda\\back-end\\Agenda.Infrastructure\\Agenda.Infrastructure.csproj",
+      "projectName": "Agenda.Infrastructure",
+      "projectPath": "C:\\Projetos\\agenda\\back-end\\Agenda.Infrastructure\\Agenda.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\agenda\\back-end\\Agenda.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Projetos\\agenda\\back-end\\Agenda.Application\\Agenda.Application.csproj": {
+              "projectPath": "C:\\Projetos\\agenda\\back-end\\Agenda.Application\\Agenda.Application.csproj"
+            },
+            "C:\\Projetos\\agenda\\back-end\\Agenda.Domain\\Agenda.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\agenda\\back-end\\Agenda.Domain\\Agenda.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

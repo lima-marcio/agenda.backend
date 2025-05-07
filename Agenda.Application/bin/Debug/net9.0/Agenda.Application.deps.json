@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Agenda.Application/1.0.0": {
+        "runtime": {
+          "Agenda.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Agenda.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

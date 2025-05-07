@@ -1,0 +1,11 @@
+C:\Projetos\agenda\back-end\Agenda.Domain\bin\Debug\net9.0\Agenda.Domain.deps.json
+C:\Projetos\agenda\back-end\Agenda.Domain\bin\Debug\net9.0\Agenda.Domain.dll
+C:\Projetos\agenda\back-end\Agenda.Domain\bin\Debug\net9.0\Agenda.Domain.pdb
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.AssemblyInfoInputs.cache
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.AssemblyInfo.cs
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.dll
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\refint\Agenda.Domain.dll
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\Agenda.Domain.pdb
+C:\Projetos\agenda\back-end\Agenda.Domain\obj\Debug\net9.0\ref\Agenda.Domain.dll
