@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HugA4bb741E=",
+  "dgSpecHash": "mrTY5qah7Ws=",
   "success": true,
   "projectFilePath": "C:\\Projetos\\agenda\\back-end\\Agenda.Application\\Agenda.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marci\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\marci\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
