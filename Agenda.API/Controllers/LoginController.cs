@@ -9,6 +9,7 @@ namespace Agenda.API.Controllers
     [HttpGet]
     public async Task<IActionResult> GetLogin()
     {
+      await Task.CompletedTask;
       var message = "Login successful!";
       return Ok(message);
     }

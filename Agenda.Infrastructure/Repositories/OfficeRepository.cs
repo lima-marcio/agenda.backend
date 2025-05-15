@@ -45,5 +45,19 @@ namespace Agenda.Infrastructure.Repositories
       _context.Offices.Remove(office);
       return await _context.SaveChangesAsync() > 0;
     }
+
+    public async Task<List<Office>> GetPagedAsync(int page, int pageSize)
+    {
+      return await _context.Offices
+        .OrderBy(o => o.Description)
+        .Skip((page - 1) * pageSize)
+        .Take(pageSize)
+        .ToListAsync();
+    }
+
+    public async Task<int> CountAsync()
+    {
+      return await _context.Offices.CountAsync();
+    }
   }
 }

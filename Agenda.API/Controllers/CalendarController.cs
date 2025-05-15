@@ -9,6 +9,7 @@ namespace Agenda.API.Controllers
     [HttpGet]
     public async Task<IActionResult> GetCalendars()
     {
+      await Task.CompletedTask;
       var businessPartners = new List<DateTime> {
         new DateTime(2023, 10, 1),
         new DateTime(2023, 10, 2),

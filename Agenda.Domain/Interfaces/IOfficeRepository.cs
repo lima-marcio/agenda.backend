@@ -10,5 +10,7 @@ namespace Agenda.Domain.Interfaces
     Task CreateAsync(Office office);
     Task<bool> UpdateAsync(Office office);
     Task<bool> DeleteAsync(int id);
+    Task<List<Office>> GetPagedAsync(int page, int pageSize);
+    Task<int> CountAsync();
   }
 }

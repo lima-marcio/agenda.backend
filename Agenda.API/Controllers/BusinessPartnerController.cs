@@ -9,7 +9,7 @@ namespace Agenda.API.Controllers
     [HttpGet]
     public async Task<IActionResult> GetBusinessPartners()
     {
-      // Simulate fetching business partners from a database or service
+      await Task.CompletedTask;
       var businessPartners = new List<string> { "Partner A", "Partner B", "Partner C" };
       return Ok(businessPartners);
     }

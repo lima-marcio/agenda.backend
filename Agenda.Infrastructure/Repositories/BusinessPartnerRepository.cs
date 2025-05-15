@@ -4,16 +4,21 @@ using Agenda.Domain.Interfaces;
 
 namespace Agenda.Infrastructure.Repositories
 {
-  public class UserRepository : IUserRepository
+  public class BusinessPartnerRepository : IBusinessPartnerRepository
   {
     private readonly AgendaDbContext _context;
 
-    public UserRepository(AgendaDbContext context)
+    public BusinessPartnerRepository(AgendaDbContext context)
     {
       _context = context;
     }
 
-    public Task<User?> CreateAsync(User user)
+    public Task<bool> BusinessPartnerExistsAsync(string name, eBusinessPartnerType type)
+    {
+      throw new NotImplementedException();
+    }
+
+    public Task<BusinessPartner?> CreateAsync(BusinessPartner businessPartner)
     {
       throw new NotImplementedException();
     }
@@ -23,24 +28,15 @@ namespace Agenda.Infrastructure.Repositories
       throw new NotImplementedException();
     }
 
-    public Task<User?> GetByEmailAsync(string email)
+    public Task<BusinessPartner?> GetByIdAsync(int id)
     {
       throw new NotImplementedException();
     }
 
-    public Task<User?> GetByIdAsync(int id)
-    {
-      throw new NotImplementedException();
-    }
-
-    public Task<bool> UpdateAsync(User user)
-    {
-      throw new NotImplementedException();
-    }
-
-    public Task<bool> UserExistsAsync(string username, string email)
+    public Task<bool> UpdateAsync(BusinessPartner businessPartner)
     {
       throw new NotImplementedException();
     }
   }
+
 }

@@ -9,6 +9,7 @@ namespace Agenda.API.Controllers
     [HttpGet]
     public async Task<IActionResult> GetLogout()
     {
+      await Task.CompletedTask;
       var message = "Logout successful";
       return Ok(message);
     }

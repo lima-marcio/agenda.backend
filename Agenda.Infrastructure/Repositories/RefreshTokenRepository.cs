@@ -4,16 +4,16 @@ using Agenda.Domain.Interfaces;
 
 namespace Agenda.Infrastructure.Repositories
 {
-  public class UserRepository : IUserRepository
+  public class RefreshTokenRepository : IRefreshTokenRepository
   {
     private readonly AgendaDbContext _context;
 
-    public UserRepository(AgendaDbContext context)
+    public RefreshTokenRepository(AgendaDbContext context)
     {
       _context = context;
     }
 
-    public Task<User?> CreateAsync(User user)
+    public Task<RefreshToken?> CreateAsync(RefreshToken refreshToken)
     {
       throw new NotImplementedException();
     }
@@ -23,22 +23,17 @@ namespace Agenda.Infrastructure.Repositories
       throw new NotImplementedException();
     }
 
-    public Task<User?> GetByEmailAsync(string email)
+    public Task<RefreshToken?> GetByIdAsync(int id)
     {
       throw new NotImplementedException();
     }
 
-    public Task<User?> GetByIdAsync(int id)
+    public Task<bool> RefreshTokenExistsAsync(string token, int userId)
     {
       throw new NotImplementedException();
     }
 
-    public Task<bool> UpdateAsync(User user)
-    {
-      throw new NotImplementedException();
-    }
-
-    public Task<bool> UserExistsAsync(string username, string email)
+    public Task<bool> UpdateAsync(RefreshToken refreshToken)
     {
       throw new NotImplementedException();
     }

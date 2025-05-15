@@ -9,6 +9,7 @@ namespace Agenda.API.Controllers
     [HttpGet]
     public async Task<IActionResult> GetRegister()
     {
+      await Task.CompletedTask;
       var message = "Register successful!";
       return Ok(message);
     }
