@@ -83,5 +83,23 @@ namespace Agenda.Application.Services
       return new PagedResponse<OfficeDto>(items, total, page, pageSize, urlBuilder);
     }
 
+    public async Task<OfficeDto> CreateAsync(OfficeCreateDto dto)
+    {
+      var office = new Office
+      {
+        Description = dto.Description,
+        RoomNumber = dto.RoomNumber
+      };
+
+      await _repository.CreateAsync(office);
+
+      var result = new OfficeDto
+      {
+        Description = office.Description,
+        RoomNumber = office.RoomNumber
+      };
+
+      return result;
+    }
   }
 }

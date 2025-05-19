@@ -1,5 +1,6 @@
 using Agenda.Application.DTOs;
 using Agenda.Application.Interfaces;
+using Agenda.Application.UseCases.Office;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Agenda.API.Controllers
@@ -9,10 +10,14 @@ namespace Agenda.API.Controllers
   public class OfficeController : ControllerBase
   {
     private readonly IOfficeService _service;
+    private readonly CreateOfficeUseCase _createUseCase;
 
-    public OfficeController(IOfficeService service)
+    public OfficeController(
+      IOfficeService service,
+      CreateOfficeUseCase createUseCase)
     {
       _service = service;
+      _createUseCase = createUseCase;
     }
 
     [HttpGet]
@@ -31,10 +36,15 @@ namespace Agenda.API.Controllers
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(OfficeDto dto)
+    public async Task<IActionResult> Create(OfficeCreateDto dto)
     {
-      var created = await _service.CreateAsync(dto);
-      return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+      var result = await _createUseCase.ExecuteAsync(dto);
+      return CreatedAtAction(nameof(GetById), new { id = result..Id }, result);
+      // if (!ModelState.IsValid)
+      //   return BadRequest(ModelState);
+
+      // var created = await _service.CreateAsync(dto);
+      // return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
     }
 
     [HttpPut("{id}")]

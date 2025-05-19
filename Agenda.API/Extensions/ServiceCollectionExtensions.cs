@@ -1,4 +1,7 @@
 using System.Text;
+using Agenda.Application.Interfaces;
+using Agenda.Application.Services;
+using Agenda.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 // using Schedule.Interfaces;
@@ -11,13 +14,15 @@ namespace Agenda.API.Extensions
     public static IServiceCollection AddCustomServices(this IServiceCollection services)
     {
       // services.AddScoped<IUserService, UserService>();
+
       // services.AddScoped<ITokenService, TokenService>();
       // services.AddScoped<IAppointmentService, AppointmentService>();
       // services.AddScoped<IConfigurationService, ConfigurationService>();
       // services.AddScoped<IUserService, UserService>();
       // services.AddScoped<ICustomerService, CustomerService>();
       // services.AddScoped<ISupplierService, SupplierService>();
-      // services.AddScoped<IOfficeService, OfficeService>();
+      services.AddScoped<IOfficeService, OfficeService>();
+
       return services;
     }
 

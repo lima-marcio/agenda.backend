@@ -59,5 +59,10 @@ namespace Agenda.Infrastructure.Repositories
     {
       return await _context.Offices.CountAsync();
     }
+
+    public async Task<bool> ExistsByRoomNumberAsync(int id)
+    {
+      return await _context.Offices.AnyAsync(o => o.RoomNumber == id);
+    }
   }
 }
