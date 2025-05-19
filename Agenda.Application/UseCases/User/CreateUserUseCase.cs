@@ -1,5 +1,6 @@
 using Agenda.Application.DTOs;
 using Agenda.Application.Interfaces.UseCases.User;
+using Agenda.Application.Responses.Results;
 using Agenda.Domain.Interfaces;
 
 namespace Agenda.Application.UseCases.User
@@ -13,6 +14,11 @@ namespace Agenda.Application.UseCases.User
     }
 
     public Task<UserDto> ExecuteAsync(UserDto user)
+    {
+      throw new NotImplementedException();
+    }
+
+    Task<Result> ICreateUserUseCase.ExecuteAsync(UserDto user)
     {
       throw new NotImplementedException();
     }

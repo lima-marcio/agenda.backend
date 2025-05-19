@@ -13,5 +13,6 @@ namespace Agenda.Domain.Interfaces
     Task<List<Office>> GetPagedAsync(int page, int pageSize);
     Task<int> CountAsync();
     Task<bool> ExistsByRoomNumberAsync(int id);
+    Task AddAsync(Office office);
   }
 }

@@ -2,10 +2,11 @@ using Agenda.Application.DTOs;
 using Agenda.Application.Interfaces;
 using FluentValidation;
 using Agenda.Application.Responses.Results;
+using Agenda.Application.Interfaces.UseCases.Office;
 
 namespace Agenda.Application.UseCases.Office
 {
-  public class CreateOfficeUseCase
+  public class CreateOfficeUseCase : ICreateOfficeUseCase
   {
     private readonly IOfficeService _service;
     private readonly IValidator<OfficeCreateDto> _validator;
@@ -21,20 +22,15 @@ namespace Agenda.Application.UseCases.Office
     public async Task<Result> ExecuteAsync(OfficeCreateDto dto)
     {
       var validation = await _validator.ValidateAsync(dto);
+
       if (!validation.IsValid)
       {
         return Result.Failure(validation.Errors.Select(e => e.ErrorMessage));
       }
 
-      // var office = new OfficeDto
-      // {
-      //   Description = dto.Description,
-      //   RoomNumber = dto.RoomNumber
-      // };
-
       var result = await _service.CreateAsync(dto);
 
-      return new Result<OfficeDto>(true, result).Success();
+      return Result<OfficeDto>.Success(result);
     }
   }
 }

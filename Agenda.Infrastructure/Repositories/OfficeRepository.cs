@@ -15,6 +15,12 @@ namespace Agenda.Infrastructure.Repositories
       _context = context;
     }
 
+    public async Task AddAsync(Office office)
+    {
+      _context.Offices.Add(office);
+      await _context.SaveChangesAsync();
+    }
+
     public async Task<List<Office>> GetAllAsync()
     {
       return await _context.Offices.ToListAsync();

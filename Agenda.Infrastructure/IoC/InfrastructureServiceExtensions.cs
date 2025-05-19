@@ -1,4 +1,11 @@
+using Agenda.Application.Interfaces;
+using Agenda.Application.Interfaces.UseCases.Office;
+using Agenda.Application.Services;
+using Agenda.Application.UseCases.Office;
+using Agenda.Domain.Interfaces;
 using Agenda.Infrastructure.Data;
+using Agenda.Infrastructure.Repositories;
+using Agenda.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +19,11 @@ namespace Agenda.Infrastructure.IoC
       services.AddDbContext<AgendaDbContext>(options =>
           options.UseSqlite(config.GetConnectionString("DefaultConnection")));
 
-      // services.AddCustomServices();
+      services.AddScoped<ICreateOfficeUseCase, CreateOfficeUseCase>();
+      services.AddScoped<IUpdateOfficeUseCase, UpdateOfficeUseCase>();
+      services.AddScoped<IOfficeRepository, OfficeRepository>();
+      services.AddScoped<IOfficeService, OfficeService>();
+
 
       return services;
     }

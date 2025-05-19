@@ -13,7 +13,7 @@ namespace Agenda.API.Extensions
       services.AddScoped<IGetAllOfficesUseCase, GetAllOfficesUseCase>();
       services.AddScoped<IUseCase<int, OfficeDto?>, GetOfficeByIdUseCase>();
       // services.AddScoped<IUseCase<OfficeDto, OfficeDto>, CreateOfficeUseCase>();
-      services.AddScoped<IUseCase<OfficeDto, bool>, UpdateOfficeUseCase>();
+      // services.AddScoped<IUseCase<OfficeDto, bool>, UpdateOfficeUseCase>();
       services.AddScoped<IUseCase<int, bool>, DeleteOfficeUseCase>();
 
       services.AddScoped<CreateOfficeUseCase>();

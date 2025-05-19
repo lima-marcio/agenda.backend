@@ -1,10 +1,10 @@
 using Agenda.Application.DTOs;
+using Agenda.Application.Responses.Results;
 
 namespace Agenda.Application.Interfaces.UseCases.User
 {
-
   public interface ICreateUserUseCase
   {
-    Task<UserDto> ExecuteAsync(UserDto user);
+    Task<Result> ExecuteAsync(UserDto user);
   }
 }
